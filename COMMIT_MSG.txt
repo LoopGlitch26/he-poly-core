@@ -1,0 +1,3 @@
+Add Montgomery multiplication + lazy-reduction NTT variant (bench + tests)
+
+See docs/Montgomery-Lazy.md for details.

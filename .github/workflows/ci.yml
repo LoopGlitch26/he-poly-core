@@ -1,0 +1,18 @@
+\
+name: CMake
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup dependencies
+        run: sudo apt-get update && sudo apt-get install -y build-essential cmake git
+      - name: Configure
+        run: mkdir build && cd build && cmake ..
+      - name: Build
+        run: cd build && cmake --build . -- -j
+      - name: Run tests
+        run: cd build && ./test_runner

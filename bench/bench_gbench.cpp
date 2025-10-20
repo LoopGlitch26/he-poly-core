@@ -1,0 +1,1 @@
+// GoogleBenchmark demo placeholder

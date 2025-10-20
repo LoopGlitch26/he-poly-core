@@ -1,0 +1,5 @@
+/mnt/data/he-starter-extended/montgomery-lazy/bench/bench_compare.cpp: In lambda function:
+/mnt/data/he-starter-extended/montgomery-lazy/bench/bench_compare.cpp:46:32: error: ‘ntt_montgomery’ was not declared in this scope; did you mean ‘Montgomery’?
+   46 |     double t2 = time_fn([&](){ ntt_montgomery(a2, roots, mod); }, 5);
+      |                                ^~~~~~~~~~~~~~
+      |                                Montgomery

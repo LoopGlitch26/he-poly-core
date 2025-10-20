@@ -1,0 +1,4 @@
+/mnt/data/he-starter-extended/montgomery-lazy/bench/bench_compare.cpp: In lambda function:
+/mnt/data/he-starter-extended/montgomery-lazy/bench/bench_compare.cpp:62:51: error: ‘ntt_avx2_core’ was not declared in this scope
+   62 |     double t_avx = time_fn([&](){ auto t = a_avx; ntt_avx2_core(t, mroots, mod); }, 5);
+      |                                                   ^~~~~~~~~~~~~
